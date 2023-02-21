@@ -21,9 +21,11 @@
 
 .container-primary{
     width: 100%;
-    padding: 60px;
+    padding-bottom: 100px;
+    padding-top: 70px;
     display: flex;
 	justify-content: center;
+    
 }
 
 form{
@@ -74,7 +76,9 @@ form button{
     border-radius: 1em;
     width: 100%;
 }
+
 .container-footer{
+    position: absolute;
     width: 100%;
     bottom: 0;
     background-color: #1A2A56;
@@ -82,9 +86,15 @@ form button{
     padding: 30px;
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    min-height: 80px;
 }
 
 @media (max-width: 447px){
+    .container-footer{
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
     form label .fa-solid{
         font-size: 0;
         color: #1A2A56;
